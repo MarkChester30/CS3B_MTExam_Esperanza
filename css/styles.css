@@ -1,0 +1,490 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #2d3436;
+    background-color: #f9f9f9;
+}
+
+/* Header Styles */
+header {
+    background-color: #6c5ce7;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+nav a:hover, nav a.active {
+    background-color: #5b4cc4;
+    transform: translateY(-2px);
+}
+
+/* Container Layout */
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    gap: 2rem;
+}
+
+main {
+    flex: 1;
+}
+
+aside {
+    width: 20%;
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #6c5ce7, #a8a4e6);
+    color: white;
+    padding: 4rem 2rem;
+    text-align: center;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.hero h2 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Skills Section */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.skill-item {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+}
+
+.skill-item:hover {
+    transform: translateY(-5px);
+}
+
+/* Achievements Section */
+.achievements-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.achievement-item {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.achievement-item:hover {
+    transform: translateY(-5px);
+}
+
+/* Contact Form */
+.contact form {
+    background-color: white;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.8rem;
+    font-weight: 500;
+    color: #2d3436;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #6c5ce7;
+}
+
+.form-group textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+button {
+    background-color: #6c5ce7;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #5b4cc4;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Profile Image */
+.profile-image {
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.profile-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+    aspect-ratio: 3/4;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Personal Information */
+.personal-info {
+    padding: 1rem 0;
+}
+
+.personal-info h3 {
+    color: #2d3436;
+    margin-bottom: 1.5rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.personal-info p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    color: #636e72;
+}
+
+.personal-info p:last-child {
+    margin-bottom: 0;
+}
+
+/* Feature Logo */
+.feature-logo {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.feature-logo img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+    aspect-ratio: 3/4;
+}
+
+/* Feature Presentation */
+.feature-presentation {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.feature-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Product Grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.product-card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    text-align: center;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    object-fit: cover;
+    object-position: center;
+}
+
+.product-card h3 {
+    margin-bottom: 0.8rem;
+    color: #2d3436;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.product-card .price {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #6c5ce7;
+    margin: 0.5rem 0;
+}
+
+.product-card button {
+    margin-top: auto;
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 0.9rem;
+    background-color: #6c5ce7;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.product-card button:hover {
+    background-color: #5b4cc4;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Cart Section */
+.cart-section {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: #f8f9fa;
+    border-radius: 12px;
+}
+
+#cart-items {
+    margin: 1rem 0;
+}
+
+.cart-item {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.cart-item-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.product-name {
+    font-weight: bold;
+    color: #2d3436;
+    font-size: 1.1rem;
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0.5rem 0;
+}
+
+.quantity-btn {
+    background-color: #6c5ce7;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 0;
+    transition: background-color 0.3s;
+}
+
+.quantity-btn:hover {
+    background-color: #5b4cc4;
+}
+
+.quantity {
+    min-width: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.cart-item-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid #e0e0e0;
+}
+
+.cart-item-total span {
+    font-weight: bold;
+    color: #2d3436;
+    font-size: 1.1rem;
+}
+
+.remove-item {
+    background: none;
+    border: none;
+    color: #e74c3c;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.remove-item:hover {
+    background-color: #fde8e8;
+    color: #c0392b;
+}
+
+.remove-item i {
+    font-size: 1rem;
+}
+
+.cart-total {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 2px solid #e0e0e0;
+    text-align: left;
+    font-weight: 600;
+    color: #2d3436;
+}
+
+/* Footer */
+footer {
+    background-color: #6c5ce7;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 3rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        margin-top: 1rem;
+    }
+
+    .hero h2 {
+        font-size: 2.2rem;
+    }
+} 

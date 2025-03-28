@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FEATURES</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>My Features</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="features.html" class="active">Features</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <main>
+            <section class="hero">
+                <h2>Welcome to my Features</h2>
+                <p>Explore my latest products</p>
+            </section>
+
+            <section class="products">
+                <h2>Featured Products</h2>
+                <div class="product-grid">
+                    <!-- First Row -->
+                    <div class="product-card">
+                        <img src="assets/product1.jpg" alt="Kyrie Shock Wave 5">
+                        <h3>Kyrie Shock Wave 5</h3>
+                        <p class="price">₱5167.00</p>
+                        <button class="add-to-cart" data-product="Kyrie Shock Wave 5" data-price="5167.00">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="assets/product2.jpg" alt="Precision 6">
+                        <h3>Precision 6</h3>
+                        <p class="price">₱3495.00</p>
+                        <button class="add-to-cart" data-product="Precision 6" data-price="3495.00">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="assets/product3.jpg" alt="Lebron 18">
+                        <h3>Lebron 18</h3>
+                        <p class="price">₱13899.00</p>
+                        <button class="add-to-cart" data-product="Lebron 18" data-price="13899.00">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="assets/product4.jpg" alt="Jordan 38 Low">
+                        <h3>Jordan 38 Low</h3>
+                        <p class="price">₱6000.00</p>
+                        <button class="add-to-cart" data-product="Jordan 38 Low" data-price="6000.00">Add to Cart</button>
+                    </div>
+
+                    <!-- Second Row -->
+                    <div class="product-card">
+                        <img src="assets/product5.jpg" alt="Strick Land">
+                        <h3>Strick Land</h3>
+                        <p class="price">₱2279.75</p>
+                        <button class="add-to-cart" data-product="Strick Land" data-price="2279.75">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="assets/product6.jpg" alt="Side Step">
+                        <h3>Side Step</h3>
+                        <p class="price">₱2799.99</p>
+                        <button class="add-to-cart" data-product="Side Step" data-price="2799.99">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="assets/product7.jpg" alt="Drop Shot">
+                        <h3>Drop Shot</h3>
+                        <p class="price">₱1999.99</p>
+                        <button class="add-to-cart" data-product="Drop Shot" data-price="1999.99">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="assets/product8.jpg" alt="Cross Jab">
+                        <h3>Cross Jab</h3>
+                        <p class="price">₱2999.99</p>
+                        <button class="add-to-cart" data-product="Cross Jab" data-price="2999.99">Add to Cart</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <aside>
+            <div class="feature-logo">
+                <img src="assets/logo.jpg" alt="Features Logo">
+            </div>
+            <div class="cart-section">
+                <h3>Shopping Cart</h3>
+                <div id="cart-items">
+                    <!-- Cart items will be dynamically added here -->
+                </div>
+                <div class="cart-total">
+                    <h4>Total: <span id="cart-total-price">₱0.00</span></h4>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Mark Chester D. Esperanza. All rights reserved.</p>
+    </footer>
+
+    <script src="js/cart.js"></script>
+</body>
+</html> 
